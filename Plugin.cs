@@ -27,7 +27,7 @@ public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
     public override string Name => "EdlToMediaSegments";
 
     /// <inheritdoc />
-    public override Guid Id => Guid.Parse("bbc965f4-1261-4cfc-ac0e-29244971097d");
+    public override Guid Id => Guid.Parse("73951343-A083-484F-B280-FF1E39BC737B");
 
 
     /// <summary>
