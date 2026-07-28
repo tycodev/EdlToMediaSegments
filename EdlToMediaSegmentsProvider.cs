@@ -70,13 +70,12 @@ public class EdlToMediaSegmentsProvider(
                 ItemId = id,
                 Type = action switch
                 {
-                    // This doesn't strictly agree with the EDL spec, but it is what Jellyfin understands.
-                    0 => MediaSegmentType.Intro,
-                    1 => MediaSegmentType.Preview,
-                    2 => MediaSegmentType.Recap,
-                    3 => MediaSegmentType.Commercial,
+                    1 => MediaSegmentType.Commercial,
+                    2 => MediaSegmentType.Preview,
+                    3 => MediaSegmentType.Recap,
                     4 => MediaSegmentType.Outro,
-                    _ => MediaSegmentType.Unknown
+                    5 => MediaSegmentType.Intro,
+                    _ => MediaSegmentType.Unknown,
                 },
                 StartTicks = ConvertToTicks(start),
                 EndTicks = ConvertToTicks(stop)

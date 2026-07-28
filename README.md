@@ -30,11 +30,12 @@ start stop type
 Where `start` is the start time in seconds (e.g. 510.333), `stop` is the stop time in
 seconds, and `type` is the type of the media segment, as follows:
 
-0 - Intro
-1 - Preview
-2 - Recap
-3 - Commercial
+1 - Commercial
+2 - Preview
+3 - Recap
 4 - Outro
+5 - Intro
+X - Unknown
 
 For example, a file to skip a 1:30 intro and then a commercial break from 4:30.5 to 5:00 would
 look like:
