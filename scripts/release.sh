@@ -9,7 +9,7 @@ Example:
   ./scripts/release.sh 1.0.0.4 v1.0.0.4
 
 This script:
-  1. Zips bin/Release/net9.0/EdlToMediaSegments.dll into EdlToMediaSegments-<version>.zip
+  1. Zips bin/Release/net10.0/EdlToMediaSegments.dll into EdlToMediaSegments-<version>.zip
   2. Computes the zip MD5 checksum
   3. Updates the matching version checksum in manifest.json
   4. Uploads the zip to the specified GitHub release
@@ -24,7 +24,7 @@ fi
 VERSION=$1
 RELEASE=$2
 MANIFEST=manifest.json
-SOURCE_DLL=bin/Release/net9.0/EdlToMediaSegments.dll
+SOURCE_DLL=bin/Release/net10.0/EdlToMediaSegments.dll
 OUTPUT=EdlToMediaSegments-${VERSION}.zip
 
 if [[ ! -f "$SOURCE_DLL" ]]; then
