@@ -9,7 +9,7 @@
     "versions": [
       {
         "version": "12.2.0.0",
-        "checksum": "b17d21cbfd416b5ce567487687c66769",
+        "checksum": "ee8e12b70b91558b1497abc7492a8a35",
         "changelog": "Update the mapping of EDL action codes to Media Segment types to match Jellyfin's expectations.",
         "targetAbi": "12.2.0.0",
         "sourceUrl": "https://github.com/tycodev/EdlToMediaSegments/releases/download/v12.2.0.0/EdlToMediaSegments-12.2.0.0.zip",
