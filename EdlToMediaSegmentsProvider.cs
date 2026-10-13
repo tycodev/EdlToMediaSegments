@@ -86,4 +86,9 @@ public class EdlToMediaSegmentsProvider(
     }
 
     private static long ConvertToTicks(double seconds) => (long)(seconds * TimeSpan.TicksPerSecond);
+
+    public Task CleanupExtractedData(Guid itemId, CancellationToken cancellationToken)
+    {
+        return Task.CompletedTask;
+    }
 }
